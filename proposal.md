@@ -5,7 +5,7 @@ PyRhythm
 https://github.com/z3nnii/RhythmGame
 
 ## Description
-For my PFDA project, I would like to make a rhythm game using pygame and possibly other modules.
+For my PFDA project, I would like to make a rhythm game using pygame and possibly other modules like random for example if needed.
 
 ## Features
 - Input timings
