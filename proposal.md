@@ -1,46 +1,49 @@
 # Title
-My Awesome Digital Art Project
+PyRhythm
 
 ## Repository
-https://github.com/z3nnii/RhythmGame.git
+https://github.com/z3nnii/RhythmGame
 
 ## Description
-This project is an interactive visual experience that reacts to music. It combines real-time audio input with generative art to create a dynamic visual display relevant to digital media.
+For my PFDA project, I would like to make a rhythm game using pygame and possibly other modules.
 
 ## Features
-- Real-time audio analysis
-  - Use Python libraries to detect sound levels and frequency.
-- Generative visuals
-  - Use Pygame or Processing to create visuals that react to sound input.
-- User interaction
-  - Add mouse or keyboard input to affect the visuals.
+- Input timings
+- Custom Assets
+- Maybe Scoring?
+- Key inputs
+- Rhythm Game maps
+
 
 ## Challenges
-- Learn how to capture and analyze audio in real-time.
-- Understand how to connect audio data to visual changes.
-- Figure out performance optimizations for smooth real-time rendering.
+- Learn how to make a scoring system with this if I have time
+- Learn Github Repo honestly
+- Learn workflow and organization of files so no bugs can occur.
+- Learn pygame more.
+
 
 ## Outcomes
 Ideal Outcome:
 - A polished interactive audio-reactive art piece that’s visually impressive and performs well in real-time.
 
 Minimal Viable Outcome:
-- A basic app that visualizes sound with simple shapes or colors, even if the visuals are basic or laggy.
+- Basic key inputs timings and visable input squares, keystrokes work, note map successfully transfers and works, mp4 works.
 
 ## Milestones
 
 - Week 1
-  1. Research audio input and analysis libraries
-  2. Set up GitHub repo and write project proposal
+  1. Assets, set up and organize GitHub
 
 - Week 2
-  1. Capture live audio
-  2. Create basic visual output in response to audio
+  2.  Rough code, set up mp3's and sprites, note maps
 
 - Week 3
-  1. Add user interaction (mouse/keyboard)
-  2. Optimize performance
+  3. Polish code, maybe background
 
-- Week 4 (Final)
-  1. Polish visuals and interactions
-  2. Write final README and demo video (optional)
+- Week 4
+
+  4. Debug
+
+- Week 5
+
+  5. Maybe make more note maps
