@@ -22,6 +22,7 @@ keys = [
 ]
 
 def load(map):
+    rects = []
     mixer.music.load(map + ".mp3")
     mixer.music.play()
     f = open(map + ".txt", 'r')
@@ -30,9 +31,11 @@ def load(map):
     for y in range(len(data)):
         for x in range(len(data[y])):
             if data[y][x] == '0':
-                pygame.draw.rect(screen,(0,0,0),(x*20,y*20,20,20))
+                rects.append(pygame.Rect(keys[x].rect.x,y * -100,50,25))
+    return rects
+                
 
-load("DeathbyGlamour")
+map_rect = load("DeathbyGlamour")
 
 while True:
     for event in pygame.event.get():
@@ -46,6 +49,10 @@ while True:
             pygame.draw.rect(screen,key.color1,key.rect)
         if not k[key.key]:
             pygame.draw.rect(screen,key.color2,key.rect)
+
+    for rect in map_rect:
+        pygame.draw.rect(screen,(200,0,0),rect)
+        rect.y += 1
 
 
 
