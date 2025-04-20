@@ -2,8 +2,6 @@ import pygame
 from pygame import mixer
 
 mixer.init()
-mixer.music.load('DeathbyGlamour.mp3')
-mixer.music.play()
 
 screen = pygame.display.set_mode((800, 600))
 
@@ -22,6 +20,19 @@ keys = [
     Key(300,500,(0,0,255),(0,0,220),pygame.K_d),
     Key(400,500,(255,255,0),(220,220,0),pygame.K_f),
 ]
+
+def load(map):
+    mixer.music.load(map + ".mp3")
+    mixer.music.play()
+    f = open(map + ".txt", 'r')
+    data = f.readlines()
+
+    for y in range(len(data)):
+        for x in range(len(data[y])):
+            if data[y][x] == '0':
+                pygame.draw.rect(screen,(0,0,0),(x*20,y*20,20,20))
+
+load("DeathbyGlamour")
 
 while True:
     for event in pygame.event.get():
