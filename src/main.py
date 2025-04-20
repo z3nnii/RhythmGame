@@ -3,6 +3,7 @@ from pygame import mixer
 
 mixer.init()
 mixer.music.load('DeathbyGlamour.mp3')
+mixer.music.play()
 
 screen = pygame.display.set_mode((800, 600))
 
