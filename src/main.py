@@ -137,6 +137,9 @@ while True:
         else:
             pygame.draw.rect(screen, key.color2, key.rect)
             key.handled = True
+            
+    key_label = font.render(pygame.key.name(key.key).upper(), True, (255, 255, 255))
+    screen.blit(key_label, (key.rect.centerx - key_label.get_width() // 2, key.rect.centery - key_label.get_height() // 2))
 
     for note in map_notes[:]:
         note.rect.y += 5
@@ -184,7 +187,7 @@ while True:
     screen.blit(font.render(f"Combo: {combo}", True, (255, 255, 255)), (20, 60))
 
     pygame.display.update()
-    clock.tick(60)
+    clock.tick(70)
 
 
 
