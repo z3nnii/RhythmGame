@@ -99,9 +99,9 @@ def load(map):
                 rect = pygame.Rect(keys[x].rect.centerx - 25, y * -100, 50, 25)
                 map_notes.append(Note(rect, x))
 
-load("DeathbyGlamour")
+load("Unity")
 
-hit_effects = []
+accuracy = []
 score = 0
 combo = 0
 
@@ -165,7 +165,7 @@ while True:
                     rating = "OK"
                     score += 40
                     combo += 1
-                hit_effects.append((rating, key.rect.centerx, key.rect.top - 40, 60))
+                accuracy.append((rating, key.rect.centerx, key.rect.top - 40, 60))
                 map_notes.remove(note)
                 key.handled = True
 
@@ -175,17 +175,17 @@ while True:
             rating = "Miss"
             score -= 25
             combo = 0
-            hit_effects.append((rating, note.rect.centerx, keys[0].rect.top - 40, 60))
+            accuracy.append((rating, note.rect.centerx, keys[0].rect.top - 40, 60))
 
-    for effect in hit_effects[:]:
+    for effect in accuracy[:]:
         text, x, y, life = effect
         label = font.render(text, True, (255, 255, 255))
         screen.blit(label, (x - label.get_width() // 2, y))
         life -= 1
         if life <= 0:
-            hit_effects.remove(effect)
+            accuracy.remove(effect)
         else:
-            hit_effects[hit_effects.index(effect)] = (text, x, y, life)
+            accuracy[accuracy.index(effect)] = (text, x, y, life)
 
     screen.blit(font.render(f"Score: {score}", True, (255, 255, 255)), (20, 20))
     screen.blit(font.render(f"Combo: {combo}", True, (255, 255, 255)), (20, 60))
