@@ -1,15 +1,12 @@
 import pygame
 from pygame import mixer
-import time
 
 pygame.init()
 
-# Screen and font
 screen = pygame.display.set_mode((800, 600))
 clock = pygame.time.Clock()
-font = pygame.font.SysFont("Arial", 30)
+font = pygame.font.SysFont("Arial", 24)
 
-# Key class
 class Key():
     def __init__(self, x, y, color1, color2, key):
         self.x = x
@@ -102,7 +99,7 @@ def load(map):
                 rect = pygame.Rect(keys[x].rect.centerx - 25, y * -100, 50, 25)
                 map_notes.append(Note(rect, x))
 
-load("Unity")
+load("DeathbyGlamour")
 
 hit_effects = []
 score = 0
@@ -118,9 +115,9 @@ while True:
 
     k = pygame.key.get_pressed()
     dancing = False
-    for key in key_dances:
-        if k[key]:
-            character.trigger_dance(key_dances[key])
+    for key_code in key_dances:
+        if k[key_code]:
+            character.trigger_dance(key_dances[key_code])
             dancing = True
     if not dancing:
         character.reset_to_default()
@@ -137,9 +134,16 @@ while True:
         else:
             pygame.draw.rect(screen, key.color2, key.rect)
             key.handled = True
-            
-    key_label = font.render(pygame.key.name(key.key).upper(), True, (255, 255, 255))
-    screen.blit(key_label, (key.rect.centerx - key_label.get_width() // 2, key.rect.centery - key_label.get_height() // 2))
+
+        label_text = pygame.key.name(key.key).upper()
+        key_label = font.render(label_text, True, (255, 255, 255))
+        screen.blit(
+            key_label,
+            (
+                key.rect.centerx - key_label.get_width() // 2,
+                key.rect.centery - key_label.get_height() // 2
+            )
+        )
 
     for note in map_notes[:]:
         note.rect.y += 5
@@ -188,7 +192,3 @@ while True:
 
     pygame.display.update()
     clock.tick(70)
-
-
-
-
