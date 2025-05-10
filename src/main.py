@@ -191,4 +191,4 @@ while True:
     screen.blit(font.render(f"Combo: {combo}", True, (255, 255, 255)), (20, 60))
 
     pygame.display.update()
-    clock.tick(70)
+    clock.tick(80)
