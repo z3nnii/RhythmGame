@@ -102,7 +102,7 @@ def load(map):
                 rect = pygame.Rect(keys[x].rect.centerx - 25, y * -100, 50, 25)
                 map_notes.append(Note(rect, x))
 
-load("DeathbyGlamour")
+load("TheFatRat - Unity [NCS]")
 
 hit_effects = []
 score = 0
