@@ -8,7 +8,7 @@ Inspired resources:  <br/>
 https://www.youtube.com/watch?v=u4Iq4niauCo&t=726s <br/>
 https://www.pygame.org/docs/ <br/>
 
-[GitHub link](https://github.com/z3nnii/RhythmGame)  <br/>
-[Video link]: (https://youtu.be/udZ97oY3xJc)  <br/>
-Music: [Unity - TheFatRat, NoCopyrightSound Remix 
+[GitHub Link](https://github.com/z3nnii/RhythmGame)  <br/>
+[Video Link](https://youtu.be/udZ97oY3xJc)  <br/>
+Music: [Unity - TheFatRat, NoCopyrightSound Remix](https://www.youtube.com/watch?v=53i-dt8srpg) 
 
