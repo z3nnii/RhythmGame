@@ -8,5 +8,6 @@ Inspired resources:
 https://www.youtube.com/watch?v=u4Iq4niauCo&t=726s
 https://www.pygame.org/docs/ 
 
+GitHub link: https://github.com/z3nnii/RhythmGame
 Music by - TheFatRat, NoCopyrightSound Remix
 
