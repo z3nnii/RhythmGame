@@ -8,11 +8,15 @@ Some things I would like to consider for the future are to make animated effects
 
 Use ASKL for the keybinds
 
+## GitHub Repository
+[GitHub Link](https://github.com/z3nnii/RhythmGame)  <br/>
+
+## Demo
+[Video Link](https://youtu.be/udZ97oY3xJc)  <br/>
+
+## Sources
+Music: [Unity - TheFatRat, NoCopyrightSound Remix](https://www.youtube.com/watch?v=53i-dt8srpg) <br/>
+
 Inspired resources:  <br/>
 https://www.youtube.com/watch?v=u4Iq4niauCo&t=726s <br/>
 https://www.pygame.org/docs/ <br/>
-
-[GitHub Link](https://github.com/z3nnii/RhythmGame)  <br/>
-[Video Link](https://youtu.be/udZ97oY3xJc)  <br/>
-Music: [Unity - TheFatRat, NoCopyrightSound Remix](https://www.youtube.com/watch?v=53i-dt8srpg) 
-
