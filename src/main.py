@@ -168,14 +168,14 @@ while True:
                 accuracy.append((rating, key.rect.centerx, key.rect.top - 40, 60))
                 map_notes.remove(note)
                 key.handled = True
-
-    for note in map_notes[:]:
+                
         if note.rect.top > 600:
             map_notes.remove(note)
             rating = "Miss"
             score -= 25
             combo = 0
             accuracy.append((rating, note.rect.centerx, keys[0].rect.top - 40, 60))
+
 
     for effect in accuracy[:]:
         text, x, y, life = effect
