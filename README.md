@@ -4,12 +4,11 @@ For my PFDA final, I made a little rhythm game! You'll be putting your hand eye 
 
 Use ASKL for the keybinds
 
-Inspired resources: 
-https://www.youtube.com/watch?v=u4Iq4niauCo&t=726s
+Inspired resources:  <br/>
+https://www.youtube.com/watch?v=u4Iq4niauCo&t=726s <br/>
+https://www.pygame.org/docs/ <br/>
 
-https://www.pygame.org/docs/ 
-
-[GitHub link](https://github.com/z3nnii/RhythmGame)
-[Video link]: (https://youtu.be/udZ97oY3xJc)
-Music: Unity - TheFatRat, NoCopyrightSound Remix
+[GitHub link](https://github.com/z3nnii/RhythmGame)  <br/>
+[Video link]: (https://youtu.be/udZ97oY3xJc)  <br/>
+Music: [Unity - TheFatRat, NoCopyrightSound Remix 
 
